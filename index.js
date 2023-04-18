@@ -2,7 +2,7 @@
 const inquirer = require("inquirer")
 const fs = require("fs")
 //generate file
-const generateFile= ({Title, Description, Installation, Usage, License, Contributing, Tests, Questions}) =>
+// const generateFile= ({Title, Description, Installation, Usage, License, Contributing, Tests, Questions}) =>
 
 
 // Questions
@@ -50,7 +50,10 @@ inquirer
         }
          
     ])
-    .then((answers) =>
-    console.log(answers),
+    .then((answers) => {
+    console.log(answers);
+    fs.writeFile('README.md', generateFile(answers), (err) =>{
 
-  );
+    });
+
+});
