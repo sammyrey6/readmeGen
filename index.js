@@ -1,38 +1,53 @@
 //init
 const inquirer = require("inquirer")
 const fs = require("fs")
-const generateHtml= ({Title, Location, Linkedin, Github})
+//generate file
+const generateFile= ({Title, Location, Linkedin, Github})
 
-
+// Questions
 inquirer
     .prompt([
         {
             type: 'Input',
-            message: 'What art thou name?',
+            message: 'What is the title of your project?',
             name: 'Title',
         },
         {
             type: 'Input',
-            message: 'Whre doth thee liveth?',
-            name: 'Location',
+            message: 'Description',
+            name: 'Description',
         },
         {
             type: 'Input',
-            message: 'What is thy github?',
-            name: 'Github',
+            message: 'Installation',
+            name: 'Installation',
         },
         {
             type: 'Input',
-            message: 'What is thy Linkedin?',
-            name: 'Linkedin',
+            message: 'Usage',
+            name: 'Usage',
         },
         {
-            type: 'confirm',
-            message: 'Art thou crying inside?',
-            choices: ['yes','no'],
-            name: 'Feelings',
-            
-        } 
+            type: 'Input',
+            message: 'License',
+            name: 'License',
+        },
+        {
+            type: 'Input',
+            message: 'Contributing',
+            name: 'Contributing',
+        },
+        {
+            type: 'Input',
+            message: 'Tests',
+            name: 'Tests',
+        },
+        {
+            type: 'Input',
+            message: 'Questions',
+            name: 'Questions',
+        }
+         
     ])
     .then((answers) =>
     console.log(answers),
