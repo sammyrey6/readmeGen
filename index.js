@@ -2,9 +2,40 @@
 const inquirer = require("inquirer")
 const fs = require("fs")
 //generate file
-// const generateFile= ({Title, Description, Installation, Usage, License, Contributing, Tests, Questions}) =>
+ const generateFile= ({Title, Description, Installation, Usage, License, Contributing, Tests, Questions}) =>
+`# ${Title}
+
+Table of Contents
+*input yourself*
+
+${Usage}
+
+## Description
+
+${Description}
+
+## Getting Started
+
+### Installing
+
+${Installation}
 
 
+## Question/advise
+
+${Questions}
+
+## Authors
+
+${Contributing}
+## Tests
+
+${Tests}
+
+## License
+
+${License}
+`
 // Questions
 inquirer
     .prompt([
