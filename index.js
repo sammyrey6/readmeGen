@@ -2,7 +2,8 @@
 const inquirer = require("inquirer")
 const fs = require("fs")
 //generate file
-const generateFile= ({Title, Location, Linkedin, Github})
+const generateFile= ({Title, Description, Installation, Usage, License, Contributing, Tests, Questions}) =>
+
 
 // Questions
 inquirer
