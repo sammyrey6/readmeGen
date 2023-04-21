@@ -28,7 +28,7 @@ inquirer
             name: 'Usage',
         },
         {
-            type: 'List',
+            type: 'list',
             message: 'License',
             name: 'License',
             choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
