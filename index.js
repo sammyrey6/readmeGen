@@ -1,41 +1,9 @@
 //init
 const inquirer = require("inquirer")
 const fs = require("fs")
+const generateMarkdown = require ('./Utils/generateMarkdown')
 //generate file
- const generateFile= ({Title, Description, Installation, Usage, License, Contributing, Tests, Questions}) =>
-`# ${Title}
 
-Table of Contents
-*input yourself*
-
-${Usage}
-
-## Description
-
-${Description}
-
-## Getting Started
-
-### Installing
-
-${Installation}
-
-
-## Question/advise
-
-${Questions}
-
-## Authors
-
-${Contributing}
-## Tests
-
-${Tests}
-
-## License
-
-${License}
-`
 // Questions
 inquirer
     .prompt([
@@ -60,9 +28,10 @@ inquirer
             name: 'Usage',
         },
         {
-            type: 'Input',
+            type: 'List',
             message: 'License',
             name: 'License',
+            choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
         },
         {
             type: 'Input',
@@ -76,14 +45,19 @@ inquirer
         },
         {
             type: 'Input',
-            message: 'Questions',
-            name: 'Questions',
+            message: 'What is your Email?',
+            name: 'Email',
+        },
+        {
+            type: 'Input',
+            message: 'What is your Github?',
+            name: 'Github',
         }
          
     ])
     .then((answers) => {
     console.log(answers);
-    fs.writeFile('README.md', generateFile(answers), (err) =>{
+    fs.writeFile('README.md', generateMarkdown(answers), (err) =>{
 
     });
 
