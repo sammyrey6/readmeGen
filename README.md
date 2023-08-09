@@ -1,12 +1,12 @@
-# Y
- ![Github license](https://img.shields.io/badge/license-GPL%203.0-blue.svg)
+# Password Generator
+
 ## Description
 
-y
+This is a quick little password generator that can take your description selected and create a passsword in the browser.
 
 ## Table of Contents
 - [Installation](#Installation)
-- [license](#license)
+
 - [Usage](#Usage)
 - [Contributing](#Contributing)
 - [Tests](#Tests)
@@ -14,26 +14,25 @@ y
 
 
 ## Usage
-y
+To create Passwords.
 
 
 ## Installation
 
-y
+Open with live server!
 
 
 ## Question/advise
-If you have any questions you can email me at y.
+If you have any questions you can email me at samuelrey.carag@gmail.com.
 
-If you want to see more of my work you can check out my Github at [y](https://github.com/y).
+If you want to see more of my work you can check out my Github at [https://github.com/sammyrey6](https://github.com/https://github.com/sammyrey6).
 
 
 ## Contributing
 
-y
+Sammyrey6
 ## Tests
 
-y
+N/a
 
-## License
- This project is licensed under the GPL 3.0 license
+
